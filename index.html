@@ -1,45 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#about">about</a>
-        <a href="#projects">projects</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="@import.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="flex items-centre justify-between">
+          <div class="left flex justfiy-right">
+            <div class="logo">
+              <img src="./images/logo.png" width="50px" alt="logo" />
+            </div>
+            <div>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#more">More</a>
+            </div>
+          </div>
+          <div class="right">
+            <button class="btn btn-primary">Contact</button>
+          </div>
+        </nav>
       </div>
-      
-        <div class="sectionhome" id="home">
-            <h1> Home</h1>
-            <p>I'm Afline,Aspiring Software Developer </p>
-            <p>I am a young ambitious lady who is passionate about Technology.
-            My interest in Technology was sparked by the quest to understand 
-            how big data works. And since then I have never look back.</p>
+    </header>
+    <div class="hero flex items-centre justify-between">
+      <div class="left flex-1 justify-center">
+        <!-- <img src="Images/me.jpg" alt="Profile" /> -->
       </div>
+      <Section class="home" id="home">
+      <div class="right flex-1">
+        <h6>Afline Jasmine</h6>
+        <h1>
+          I'm a Web<br />
+          <span>Developer</span>
+        </h1>
+        <button class="btn btn-secondary">DOWNLOAD CV</button>
 
-      <div class="sectionabout" id="about">
-        <h1> About</h1>
-        <p>My name is Afline Jasmine </p>
-        <p>I recently completed my high shool</p>
-        <p>I am an aspiring software developer</p>
-        <p>I have little knowledge on tech and i am looking forward to getting well acquitted with computers. </p>
+      </Section >
+    
       </div>
-        
+    </div>
+    <section class="about" id="about">
+      <div class="container flex items-centre">
+        <div class="left flex-1 justify-right">
+          <!-- <img src="./images/man2.jpeg" height="400px" alt="profile pic" /> -->
+          <img src="Images/me.jpg" height="400px"  alt="Profile" />
 
-      <div class="sectionprojects" id="projects" > 
-        <ul> 
-            <h1>My portfolio</h1>
-            <li>Build a Multi-Page Responsive Website.</li>
-            <li> Redesign an Existing Website Template.</li>
-            <li> Design a Small JavaScript Game.</li>
-            <li>Create a Simple Application.</li>
-            <li>Random Number Generator.</li>
-            
-        </ul>
+        </div>
 
+
+
+
+
+        <div class="right flex-1">
+          <h1>About <span>Me</span></h1>
+          <h3>Hello! I'm Afline Jasmine</h3>
+          <p>
+            I am an aspiring software developer.Recently I am farmiliar with different languages.
+            So far I am acquinted with python and looking forward to learning the rest java, java script,
+            C++ and bootsrap.
+
+          </p>
+          <div class="socials">
+            <a href="#"><img src="./images/website.jpg" width="40px" /></a>
+            <a href="#"><img src="./images/facebook.jpg" width="40px" /></a>
+            <a href="#"><img src="./images/instagram.jpg" width="40px" /></a>
+            <a href="#"><img src="./images/media-player.jpg" width="40px" /></a>
+          </div>
+        </div>
       </div>
-</body>
+    </section>
+    <section class="projects" id="projects">
+      <div class="container">
+        <h1 class="projects">Projects</h1>
+        <p>All your digital needs...covered.</p>
+        <div class="card-grid">
+          <div class="card">
+            <img src="" alt="graphic design" />
+            <h2>Graphic design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing el it.
+              
+            </p>
+          </div>
+          <div class="card">
+            <img src="" alt="web development" />
+            <h2>Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing el it.
+              debitis?
+            </p>
+          </div>
+          <div class="card">
+            <img src="" alt="content writing" />
+            <h2>Content Writing</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing el it.
+              debitis?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
